@@ -40,11 +40,15 @@
             this.btnDeletePL = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.txtDeleteEmailPS = new System.Windows.Forms.TextBox();
+            this.btnexitDeletePS = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDeletePS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtNotDeletePs
             // 
+            this.txtNotDeletePs.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNotDeletePs.Location = new System.Drawing.Point(798, 474);
             this.txtNotDeletePs.Multiline = true;
             this.txtNotDeletePs.Name = "txtNotDeletePs";
@@ -53,6 +57,7 @@
             // 
             // txtnamaDeletePS
             // 
+            this.txtnamaDeletePS.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txtnamaDeletePS.Location = new System.Drawing.Point(257, 474);
             this.txtnamaDeletePS.Multiline = true;
             this.txtnamaDeletePS.Name = "txtnamaDeletePS";
@@ -61,6 +66,7 @@
             // 
             // txtidDeletePS
             // 
+            this.txtidDeletePS.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txtidDeletePS.Location = new System.Drawing.Point(257, 418);
             this.txtidDeletePS.Multiline = true;
             this.txtidDeletePS.Name = "txtidDeletePS";
@@ -70,6 +76,7 @@
             // 
             // label8
             // 
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(546, 474);
@@ -80,6 +87,7 @@
             // 
             // label9
             // 
+            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(546, 418);
@@ -90,6 +98,7 @@
             // 
             // label3
             // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(37, 468);
@@ -100,6 +109,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(37, 419);
@@ -110,6 +120,9 @@
             // 
             // dataGridViewDeletePS
             // 
+            this.dataGridViewDeletePS.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridViewDeletePS.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridViewDeletePS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewDeletePS.Location = new System.Drawing.Point(41, 89);
@@ -122,9 +135,10 @@
             // 
             // btnClearPL
             // 
+            this.btnClearPL.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClearPL.BackColor = System.Drawing.Color.Red;
             this.btnClearPL.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClearPL.Location = new System.Drawing.Point(966, 596);
+            this.btnClearPL.Location = new System.Drawing.Point(965, 570);
             this.btnClearPL.Name = "btnClearPL";
             this.btnClearPL.Size = new System.Drawing.Size(92, 50);
             this.btnClearPL.TabIndex = 61;
@@ -134,9 +148,10 @@
             // 
             // btnDeletePL
             // 
+            this.btnDeletePL.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnDeletePL.BackColor = System.Drawing.Color.Red;
             this.btnDeletePL.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeletePL.Location = new System.Drawing.Point(798, 596);
+            this.btnDeletePL.Location = new System.Drawing.Point(813, 570);
             this.btnDeletePL.Margin = new System.Windows.Forms.Padding(5);
             this.btnDeletePL.Name = "btnDeletePL";
             this.btnDeletePL.Size = new System.Drawing.Size(92, 50);
@@ -157,11 +172,36 @@
             // 
             // txtDeleteEmailPS
             // 
+            this.txtDeleteEmailPS.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txtDeleteEmailPS.Location = new System.Drawing.Point(797, 417);
             this.txtDeleteEmailPS.Multiline = true;
             this.txtDeleteEmailPS.Name = "txtDeleteEmailPS";
             this.txtDeleteEmailPS.Size = new System.Drawing.Size(260, 30);
             this.txtDeleteEmailPS.TabIndex = 75;
+            // 
+            // btnexitDeletePS
+            // 
+            this.btnexitDeletePS.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnexitDeletePS.BackColor = System.Drawing.Color.Red;
+            this.btnexitDeletePS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnexitDeletePS.Location = new System.Drawing.Point(52, 570);
+            this.btnexitDeletePS.Margin = new System.Windows.Forms.Padding(5);
+            this.btnexitDeletePS.Name = "btnexitDeletePS";
+            this.btnexitDeletePS.Size = new System.Drawing.Size(92, 50);
+            this.btnexitDeletePS.TabIndex = 76;
+            this.btnexitDeletePS.Text = "Exit";
+            this.btnexitDeletePS.UseVisualStyleBackColor = false;
+            this.btnexitDeletePS.Click += new System.EventHandler(this.btnexitDeletePS_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::TugasPertemuan11.Properties.Resources.delete_FILL0_wght400_GRAD0_opsz24;
+            this.pictureBox1.Location = new System.Drawing.Point(776, 570);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(40, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 77;
+            this.pictureBox1.TabStop = false;
             // 
             // FormDeletePeserta
             // 
@@ -169,6 +209,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkOrange;
             this.ClientSize = new System.Drawing.Size(1117, 679);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.btnexitDeletePS);
             this.Controls.Add(this.txtDeleteEmailPS);
             this.Controls.Add(this.txtNotDeletePs);
             this.Controls.Add(this.txtnamaDeletePS);
@@ -182,9 +224,11 @@
             this.Controls.Add(this.btnDeletePL);
             this.Controls.Add(this.label2);
             this.Name = "FormDeletePeserta";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormDeletePeserta";
             this.Load += new System.EventHandler(this.FormDeletePeserta_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDeletePS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -203,5 +247,7 @@
         public System.Windows.Forms.TextBox txtNotDeletePs;
         public System.Windows.Forms.TextBox txtDeleteEmailPS;
         public System.Windows.Forms.DataGridView dataGridViewDeletePS;
+        public System.Windows.Forms.Button btnexitDeletePS;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

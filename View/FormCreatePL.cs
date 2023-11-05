@@ -15,6 +15,7 @@ namespace TugasPertemuan11.View
     {
         private Pelatihan pl;
         private Pelatihan tambah;
+        Validasi  val = new Validasi();
 
         public FormCreatePL()
         {
@@ -28,19 +29,31 @@ namespace TugasPertemuan11.View
         {
             Pelatihan pl = new Pelatihan();
           
-            pl.tambahPelatihan(txtidcrPl.Text, txtnamaCRPL.Text, txtDeskCrPL.Text,dateTimemulaiPl.Value, dateTimePickerSelesaiPL.Value, txtInstCrPL.Text, txtLokasiCrPl.Text, txthargaCrPL.Text);
+            if(val.ValID(txtidcrPl.Text) && val.valName(txtnamaCRPL.Text)&& val.ValLok(txtLokasiCrPl.Text)&&val.valInstruktur(txtInstCrPL.Text)&& val.ValDes(txtDeskCrPL.Text)
+                && val.Valharga(txthargaCrPL.Text))
+            {
+                try
+                {
+                    pl.tambahPelatihan(txtidcrPl.Text, txtnamaCRPL.Text, txtDeskCrPL.Text, dateTimemulaiPl.Value, dateTimePickerSelesaiPL.Value,
+                        txtInstCrPL.Text, txtLokasiCrPl.Text, txthargaCrPL.Text);
+                    MessageBox.Show("New Pelatihan Added ", "Add pelatihan ",
+                    MessageBoxButtons.OK,MessageBoxIcon.Information);
+                    tampilPelatihan();
+                    txtidcrPl.Focus();
+                }
+                catch(Exception ex) 
+                {
+                    MessageBox.Show(ex.Message,"eror",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                }
 
-            this.Controls.Clear();
-            this.InitializeComponent();
-            txtidcrPl.Focus();
-            MessageBox.Show("Data disimpan");
-            FormCreatePL tambah = new FormCreatePL();
-            tambah.Show();
-            this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Empty field ", "eror", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+           
 
         }
-
-
         private void FormCreatePL_Load(object sender, EventArgs e)
         {
             txtidcrPl.MaxLength = 3;
@@ -58,19 +71,12 @@ namespace TugasPertemuan11.View
 
         private void btnExitPL_Click(object sender, EventArgs e)
         {
-            
-                MessageBox.Show("Keluar");
-                FormPelatihan cl = new FormPelatihan();
-                cl.Show();
-                this.Hide();
-            
-        }
 
-        private void dataGridViewCreatePL_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-           
-        }
+            FormPelatihan cl = new FormPelatihan();
+            cl.Show();
+            this.Hide();
 
+        }
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
             dateTimemulaiPl.CustomFormat = "dd/mm/yyyy";
@@ -78,10 +84,10 @@ namespace TugasPertemuan11.View
 
         private void txtidcrPl_TextChanged(object sender, EventArgs e)
         {
-            dateTimePickerSelesaiPL.CustomFormat = "dd/mm/yyyy";
+           
         }
 
-        private void dateTimePickerSelesaiPL_ValueChanged(object sender, EventArgs e)
+        private void dataGridViewCreatePL_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
@@ -91,24 +97,9 @@ namespace TugasPertemuan11.View
 
         }
 
-        private void txtDeskCrPL_TextChanged(object sender, EventArgs e)
+        private void dateTimePickerSelesaiPL_ValueChanged(object sender, EventArgs e)
         {
-
-        }
-
-        private void txtidcrPl_KeyPress(object sender, KeyPressEventArgs e)
-        {
-           
-        }
-
-        private void txtnamaCRPL_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            
-        }
-
-        private void txtDeskCrPL_KeyPress(object sender, KeyPressEventArgs e)
-        {
-
+            dateTimePickerSelesaiPL.CustomFormat = "dd/mm/yyy";
         }
     }
 }

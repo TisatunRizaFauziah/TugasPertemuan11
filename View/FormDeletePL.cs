@@ -82,7 +82,7 @@ namespace TugasPertemuan11.View
                 {
 
                     dl.hapusPelatihan(txtidDeletePl.Text);
-                    ShowDialog();
+                    tampilPelatihan();
                     btnClearPL.PerformClick();
                   
                     MessageBox.Show("pelatihan Deleted Suksess", "Delete pelatihan", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -124,6 +124,13 @@ namespace TugasPertemuan11.View
         private void dtMulaiDeletePL_ValueChanged(object sender, EventArgs e)
         {
             dtMulaiDeletePL.CustomFormat = "dd/mm/yyyy";
+        }
+
+        private void btnExitDeletePL_Click(object sender, EventArgs e)
+        {
+            FormPelatihan pl = new FormPelatihan();
+            pl.Show();
+            this.Hide();
         }
     }
 }

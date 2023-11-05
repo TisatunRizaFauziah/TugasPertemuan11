@@ -37,6 +37,7 @@
             // 
             // btnUPNgisiPL
             // 
+            this.btnUPNgisiPL.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnUPNgisiPL.BackColor = System.Drawing.Color.Red;
             this.btnUPNgisiPL.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUPNgisiPL.ForeColor = System.Drawing.Color.Black;
@@ -50,6 +51,9 @@
             // 
             // dataGridViewUpdatePs
             // 
+            this.dataGridViewUpdatePs.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridViewUpdatePs.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridViewUpdatePs.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewUpdatePs.Location = new System.Drawing.Point(39, 136);
@@ -72,6 +76,7 @@
             // 
             // btnexit
             // 
+            this.btnexit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnexit.BackColor = System.Drawing.Color.Red;
             this.btnexit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnexit.ForeColor = System.Drawing.Color.Black;
@@ -94,6 +99,7 @@
             this.Controls.Add(this.dataGridViewUpdatePs);
             this.Controls.Add(this.label2);
             this.Name = "FormUpdatePeserta";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormUpdatePeserta";
             this.Load += new System.EventHandler(this.FormUpdatePeserta_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUpdatePs)).EndInit();

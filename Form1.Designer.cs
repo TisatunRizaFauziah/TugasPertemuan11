@@ -35,11 +35,13 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("MV Boli", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(297, 117);
+            this.label1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.label1.Location = new System.Drawing.Point(314, 81);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(642, 58);
             this.label1.TabIndex = 0;
@@ -47,12 +49,13 @@
             // 
             // btnpelatihan
             // 
+            this.btnpelatihan.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnpelatihan.BackColor = System.Drawing.Color.SkyBlue;
-            this.btnpelatihan.Font = new System.Drawing.Font("MV Boli", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnpelatihan.Font = new System.Drawing.Font("MV Boli", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnpelatihan.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnpelatihan.Location = new System.Drawing.Point(493, 314);
+            this.btnpelatihan.Location = new System.Drawing.Point(483, 382);
             this.btnpelatihan.Name = "btnpelatihan";
-            this.btnpelatihan.Size = new System.Drawing.Size(256, 59);
+            this.btnpelatihan.Size = new System.Drawing.Size(352, 113);
             this.btnpelatihan.TabIndex = 2;
             this.btnpelatihan.Text = "Pelatihan";
             this.btnpelatihan.UseVisualStyleBackColor = false;
@@ -60,12 +63,13 @@
             // 
             // btnpeserta
             // 
+            this.btnpeserta.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnpeserta.BackColor = System.Drawing.Color.SkyBlue;
-            this.btnpeserta.Font = new System.Drawing.Font("MV Boli", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnpeserta.Font = new System.Drawing.Font("MV Boli", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnpeserta.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnpeserta.Location = new System.Drawing.Point(493, 432);
+            this.btnpeserta.Location = new System.Drawing.Point(483, 209);
             this.btnpeserta.Name = "btnpeserta";
-            this.btnpeserta.Size = new System.Drawing.Size(256, 59);
+            this.btnpeserta.Size = new System.Drawing.Size(352, 113);
             this.btnpeserta.TabIndex = 3;
             this.btnpeserta.Text = "Peserta";
             this.btnpeserta.UseVisualStyleBackColor = false;

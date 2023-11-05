@@ -1,15 +1,19 @@
-﻿using System;
+﻿using MySqlConnector;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TugasPertemuan11.Model;
 
 namespace TugasPertemuan11.Controller
 {
     internal class Pelatihan : Model.Connection
     {
+        Connection connec = new Connection();
         public DataTable tampilPelatihan()
         {
             DataTable data = new DataTable();
@@ -87,6 +91,26 @@ namespace TugasPertemuan11.Controller
             }
 
         }
+
+       
+           
+        public DataTable searchPelatihan(string search)
+        {
+            DataTable table = new DataTable();
+            try
+            {
+                MySqlCommand command = new MySqlCommand("SELECT * FROM Pelatihan WHERE CONCAT (id, nama_pelatihan, deskripsi, tanggal_mulai, tanggal_selesai, instruktur, lokasi, harga)LIKE '%" + search + "%'", connec.GetConn());
+                MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+                adapter.Fill(table);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Gagal delete" + ex.Message);
+            }
+            return table;
+        }
+
 
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCreatePL));
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -48,6 +49,11 @@
             this.dataGridViewCreatePL = new System.Windows.Forms.DataGridView();
             this.dateTimemulaiPl = new System.Windows.Forms.DateTimePicker();
             this.dateTimePickerSelesaiPL = new System.Windows.Forms.DateTimePicker();
+            this.label10 = new System.Windows.Forms.Label();
+            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.label11 = new System.Windows.Forms.Label();
+            this.labelKosong = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCreatePL)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,6 +69,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(43, 358);
@@ -73,6 +80,7 @@
             // 
             // label3
             // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(43, 407);
@@ -83,6 +91,7 @@
             // 
             // label4
             // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(43, 524);
@@ -93,6 +102,7 @@
             // 
             // label5
             // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(43, 468);
@@ -103,6 +113,7 @@
             // 
             // label6
             // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(552, 526);
@@ -113,6 +124,7 @@
             // 
             // label7
             // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(552, 467);
@@ -123,6 +135,7 @@
             // 
             // label8
             // 
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(552, 413);
@@ -133,6 +146,7 @@
             // 
             // label9
             // 
+            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(552, 357);
@@ -143,36 +157,36 @@
             // 
             // txtidcrPl
             // 
+            this.txtidcrPl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txtidcrPl.Location = new System.Drawing.Point(263, 357);
             this.txtidcrPl.Multiline = true;
             this.txtidcrPl.Name = "txtidcrPl";
             this.txtidcrPl.Size = new System.Drawing.Size(260, 30);
             this.txtidcrPl.TabIndex = 11;
             this.txtidcrPl.TextChanged += new System.EventHandler(this.txtidcrPl_TextChanged);
-            this.txtidcrPl.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtidcrPl_KeyPress);
             // 
             // txtnamaCRPL
             // 
+            this.txtnamaCRPL.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txtnamaCRPL.Location = new System.Drawing.Point(263, 413);
             this.txtnamaCRPL.Multiline = true;
             this.txtnamaCRPL.Name = "txtnamaCRPL";
             this.txtnamaCRPL.Size = new System.Drawing.Size(260, 30);
             this.txtnamaCRPL.TabIndex = 12;
             this.txtnamaCRPL.TextChanged += new System.EventHandler(this.txtnamaCRPL_TextChanged);
-            this.txtnamaCRPL.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtnamaCRPL_KeyPress);
             // 
             // txtDeskCrPL
             // 
+            this.txtDeskCrPL.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txtDeskCrPL.Location = new System.Drawing.Point(263, 467);
             this.txtDeskCrPL.Multiline = true;
             this.txtDeskCrPL.Name = "txtDeskCrPL";
             this.txtDeskCrPL.Size = new System.Drawing.Size(260, 30);
             this.txtDeskCrPL.TabIndex = 14;
-            this.txtDeskCrPL.TextChanged += new System.EventHandler(this.txtDeskCrPL_TextChanged);
-            this.txtDeskCrPL.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDeskCrPL_KeyPress);
             // 
             // txthargaCrPL
             // 
+            this.txthargaCrPL.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txthargaCrPL.Location = new System.Drawing.Point(804, 519);
             this.txthargaCrPL.Multiline = true;
             this.txthargaCrPL.Name = "txthargaCrPL";
@@ -181,6 +195,7 @@
             // 
             // txtLokasiCrPl
             // 
+            this.txtLokasiCrPl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txtLokasiCrPl.Location = new System.Drawing.Point(804, 467);
             this.txtLokasiCrPl.Multiline = true;
             this.txtLokasiCrPl.Name = "txtLokasiCrPl";
@@ -189,6 +204,7 @@
             // 
             // txtInstCrPL
             // 
+            this.txtInstCrPL.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txtInstCrPL.Location = new System.Drawing.Point(804, 413);
             this.txtInstCrPL.Multiline = true;
             this.txtInstCrPL.Name = "txtInstCrPL";
@@ -197,6 +213,7 @@
             // 
             // btnsavePL
             // 
+            this.btnsavePL.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnsavePL.BackColor = System.Drawing.Color.Red;
             this.btnsavePL.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsavePL.Location = new System.Drawing.Point(804, 584);
@@ -210,6 +227,7 @@
             // 
             // btnExitPL
             // 
+            this.btnExitPL.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnExitPL.BackColor = System.Drawing.Color.Red;
             this.btnExitPL.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExitPL.Location = new System.Drawing.Point(972, 584);
@@ -222,18 +240,22 @@
             // 
             // dataGridViewCreatePL
             // 
+            this.dataGridViewCreatePL.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridViewCreatePL.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridViewCreatePL.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewCreatePL.Location = new System.Drawing.Point(46, 75);
+            this.dataGridViewCreatePL.Location = new System.Drawing.Point(46, 99);
             this.dataGridViewCreatePL.Name = "dataGridViewCreatePL";
             this.dataGridViewCreatePL.RowHeadersWidth = 62;
             this.dataGridViewCreatePL.RowTemplate.Height = 28;
-            this.dataGridViewCreatePL.Size = new System.Drawing.Size(1017, 254);
+            this.dataGridViewCreatePL.Size = new System.Drawing.Size(1017, 230);
             this.dataGridViewCreatePL.TabIndex = 22;
             this.dataGridViewCreatePL.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewCreatePL_CellContentClick);
             // 
             // dateTimemulaiPl
             // 
+            this.dateTimemulaiPl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.dateTimemulaiPl.CustomFormat = " ";
             this.dateTimemulaiPl.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimemulaiPl.Location = new System.Drawing.Point(263, 526);
@@ -244,6 +266,7 @@
             // 
             // dateTimePickerSelesaiPL
             // 
+            this.dateTimePickerSelesaiPL.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.dateTimePickerSelesaiPL.CustomFormat = " ";
             this.dateTimePickerSelesaiPL.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePickerSelesaiPL.Location = new System.Drawing.Point(803, 355);
@@ -252,12 +275,49 @@
             this.dateTimePickerSelesaiPL.TabIndex = 24;
             this.dateTimePickerSelesaiPL.ValueChanged += new System.EventHandler(this.dateTimePickerSelesaiPL_ValueChanged);
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(491, 24);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(0, 20);
+            this.label10.TabIndex = 25;
+            // 
+            // printPreviewDialog1
+            // 
+            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog1.Enabled = true;
+            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
+            this.printPreviewDialog1.Name = "printPreviewDialog1";
+            this.printPreviewDialog1.Visible = false;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(0, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(0, 20);
+            this.label11.TabIndex = 26;
+            // 
+            // labelKosong
+            // 
+            this.labelKosong.AutoSize = true;
+            this.labelKosong.Location = new System.Drawing.Point(757, 24);
+            this.labelKosong.Name = "labelKosong";
+            this.labelKosong.Size = new System.Drawing.Size(0, 20);
+            this.labelKosong.TabIndex = 27;
+            // 
             // FormCreatePL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkOrange;
             this.ClientSize = new System.Drawing.Size(1117, 679);
+            this.Controls.Add(this.labelKosong);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.dateTimePickerSelesaiPL);
             this.Controls.Add(this.dateTimemulaiPl);
             this.Controls.Add(this.dataGridViewCreatePL);
@@ -310,5 +370,10 @@
         public System.Windows.Forms.TextBox txtidcrPl;
         private System.Windows.Forms.DateTimePicker dateTimemulaiPl;
         private System.Windows.Forms.DateTimePicker dateTimePickerSelesaiPL;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
+        private System.Drawing.Printing.PrintDocument printDocument1;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label labelKosong;
     }
 }

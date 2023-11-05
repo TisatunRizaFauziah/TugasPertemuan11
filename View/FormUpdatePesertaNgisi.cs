@@ -14,6 +14,7 @@ namespace TugasPertemuan11.View
     public partial class FormUpdatePesertaNgisi : Form
     {
         private Peserta ps;
+        Validasi val = new Validasi();
         public FormUpdatePesertaNgisi()
         {
             ps = new Peserta();
@@ -23,14 +24,32 @@ namespace TugasPertemuan11.View
         private void btnsavePLUp_Click(object sender, EventArgs e)
         {
             ps = new Peserta();
-            ps.updatePeserta(txtidPesertaUP.Text, txtnamaPesertaUP.Text, txtemailPesertaUP.Text, txtNoPesertaUP.Text);
-            this.Controls.Clear();
-            this.InitializeComponent();
-            txtidPesertaUP.Focus();
-            MessageBox.Show("data di update");
-            FormUpdatePeserta lk = new FormUpdatePeserta();
-            lk.Show();
-            this.Hide();
+           
+            if (val.ValID(txtidPesertaUP.Text) && val.valName(txtnamaPesertaUP.Text) && val.ValEmail(txtemailPesertaUP.Text) && val.ValNo(txtNoPesertaUP.Text, 8, 15))
+            {
+                try
+                {
+                    ps.updatePeserta(txtidPesertaUP.Text, txtnamaPesertaUP.Text, txtemailPesertaUP.Text, txtNoPesertaUP.Text);
+                    this.Controls.Clear();
+                    this.InitializeComponent();
+                    txtidPesertaUP.Focus();
+                    MessageBox.Show("data di update");
+                    FormUpdatePeserta lk = new FormUpdatePeserta();
+                    lk.Show();
+                    this.Hide();
+
+                  
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "eror", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("Empty field ", "eror", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btnExitPLUp_Click(object sender, EventArgs e)
@@ -39,6 +58,11 @@ namespace TugasPertemuan11.View
             FormUpdatePeserta cl = new FormUpdatePeserta();
             cl.Show();
             this.Hide();
+        }
+
+        private void FormUpdatePesertaNgisi_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

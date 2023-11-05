@@ -52,6 +52,7 @@
             // 
             // dateTimeMulaiUPPL
             // 
+            this.dateTimeMulaiUPPL.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dateTimeMulaiUPPL.CustomFormat = " ";
             this.dateTimeMulaiUPPL.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimeMulaiUPPL.Location = new System.Drawing.Point(810, 309);
@@ -62,6 +63,7 @@
             // 
             // dateTimeSelesaiUPPL
             // 
+            this.dateTimeSelesaiUPPL.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dateTimeSelesaiUPPL.CustomFormat = " ";
             this.dateTimeSelesaiUPPL.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimeSelesaiUPPL.Location = new System.Drawing.Point(810, 361);
@@ -73,6 +75,7 @@
             // 
             // btnExitPLUp
             // 
+            this.btnExitPLUp.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnExitPLUp.BackColor = System.Drawing.Color.Red;
             this.btnExitPLUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExitPLUp.Location = new System.Drawing.Point(978, 589);
@@ -85,9 +88,10 @@
             // 
             // btnsavePLUp
             // 
+            this.btnsavePLUp.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnsavePLUp.BackColor = System.Drawing.Color.Red;
             this.btnsavePLUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsavePLUp.Location = new System.Drawing.Point(810, 589);
+            this.btnsavePLUp.Location = new System.Drawing.Point(843, 589);
             this.btnsavePLUp.Margin = new System.Windows.Forms.Padding(5);
             this.btnsavePLUp.Name = "btnsavePLUp";
             this.btnsavePLUp.Size = new System.Drawing.Size(92, 50);
@@ -98,6 +102,7 @@
             // 
             // txt_harga_UpdtPl
             // 
+            this.txt_harga_UpdtPl.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_harga_UpdtPl.Location = new System.Drawing.Point(810, 519);
             this.txt_harga_UpdtPl.Multiline = true;
             this.txt_harga_UpdtPl.Name = "txt_harga_UpdtPl";
@@ -106,6 +111,7 @@
             // 
             // txt_lokasi_UpdtPL
             // 
+            this.txt_lokasi_UpdtPL.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_lokasi_UpdtPL.Location = new System.Drawing.Point(810, 467);
             this.txt_lokasi_UpdtPL.Multiline = true;
             this.txt_lokasi_UpdtPL.Name = "txt_lokasi_UpdtPL";
@@ -114,6 +120,7 @@
             // 
             // txtinstruktur_updtPl
             // 
+            this.txtinstruktur_updtPl.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtinstruktur_updtPl.Location = new System.Drawing.Point(810, 413);
             this.txtinstruktur_updtPl.Multiline = true;
             this.txtinstruktur_updtPl.Name = "txtinstruktur_updtPl";
@@ -122,6 +129,7 @@
             // 
             // txtDes_UpdtPL
             // 
+            this.txtDes_UpdtPL.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtDes_UpdtPL.Location = new System.Drawing.Point(810, 250);
             this.txtDes_UpdtPL.Multiline = true;
             this.txtDes_UpdtPL.Name = "txtDes_UpdtPL";
@@ -130,6 +138,7 @@
             // 
             // txt_namapl_updtPL
             // 
+            this.txt_namapl_updtPL.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_namapl_updtPL.Location = new System.Drawing.Point(810, 196);
             this.txt_namapl_updtPL.Multiline = true;
             this.txt_namapl_updtPL.Name = "txt_namapl_updtPL";
@@ -138,6 +147,7 @@
             // 
             // txt_id_updatePL
             // 
+            this.txt_id_updatePL.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_id_updatePL.Location = new System.Drawing.Point(810, 140);
             this.txt_id_updatePL.Multiline = true;
             this.txt_id_updatePL.Name = "txt_id_updatePL";
@@ -147,6 +157,7 @@
             // 
             // label6
             // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(553, 526);
@@ -157,6 +168,7 @@
             // 
             // label7
             // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(553, 467);
@@ -167,6 +179,7 @@
             // 
             // label8
             // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(553, 413);
@@ -177,6 +190,7 @@
             // 
             // label9
             // 
+            this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(553, 357);
@@ -187,6 +201,7 @@
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(553, 307);
@@ -197,6 +212,7 @@
             // 
             // label5
             // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(553, 251);
@@ -207,6 +223,7 @@
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(553, 190);
@@ -217,6 +234,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(553, 141);
@@ -227,6 +245,8 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.panel1.BackgroundImage = global::TugasPertemuan11.Properties.Resources._06knightlyIMAGE_696x822;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Location = new System.Drawing.Point(1, -4);
@@ -236,9 +256,10 @@
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("MV Boli", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(581, 27);
+            this.label2.Location = new System.Drawing.Point(581, 41);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(489, 58);
             this.label2.TabIndex = 64;
@@ -271,6 +292,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Name = "FormNgisiUpdatePl";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormNgisiUpdatePl";
             this.Load += new System.EventHandler(this.FormNgisiUpdatePl_Load);
             this.ResumeLayout(false);

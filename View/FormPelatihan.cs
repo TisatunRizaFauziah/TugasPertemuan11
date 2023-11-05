@@ -41,15 +41,13 @@ namespace TugasPertemuan11
         {
             FormUpdatePL plth = new FormUpdatePL();
             plth.Show(); 
-            this.Hide();
-            
-           
+            this.Hide();  
 
         }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Keluar");
+           
             Form1 cl = new Form1();
             cl.Show();
             this.Hide();
@@ -60,6 +58,13 @@ namespace TugasPertemuan11
           
             FormDeletePL dl = new FormDeletePL();
             dl.Show();
+            this.Hide();
+        }
+
+        private void btnSearchPL_Click(object sender, EventArgs e)
+        {
+            FormSearchPelatihan pl = new FormSearchPelatihan();
+            pl.Show();
             this.Hide();
         }
     }

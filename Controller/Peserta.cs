@@ -1,15 +1,18 @@
-﻿using System;
+﻿using MySqlConnector;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TugasPertemuan11.Model;
 
 namespace TugasPertemuan11.Controller
 {
     internal class Peserta :Model.Connection
     {
+        Connection connec = new Connection();
         public DataTable tampilPeserta()
         {
             DataTable data = new DataTable();
@@ -65,7 +68,7 @@ namespace TugasPertemuan11.Controller
         }
         public void deleteTraining(string id)
         {
-            string delete = "delete from Pelatihan where id=" + id;
+            string delete = "delete from Peserta where id=" + id;
 
             try
             {
@@ -78,6 +81,22 @@ namespace TugasPertemuan11.Controller
                 MessageBox.Show("Gagal delete" + ex.Message);
             }
 
+        }
+        public DataTable searchTeacher(string search)
+        {
+            DataTable table = new DataTable();
+            try
+            {
+                MySqlCommand command = new MySqlCommand("SELECT * FROM Peserta WHERE CONCAT (id,nama_peserta,email,no_telepon)LIKE '%" + search + "%'", connec.GetConn());
+                MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+                adapter.Fill(table);
+
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Gagal delete" + ex.Message);
+            }
+            return table;
         }
 
     }

@@ -71,6 +71,7 @@
   <ItemGroup>
     <Compile Include="Controller\Pelatihan.cs" />
     <Compile Include="Controller\Peserta.cs" />
+    <Compile Include="Controller\Validasi.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +122,18 @@
     </Compile>
     <Compile Include="View\FormPesertaCreate.Designer.cs">
       <DependentUpon>FormPesertaCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormSearchPelatihan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormSearchPelatihan.Designer.cs">
+      <DependentUpon>FormSearchPelatihan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormSearchPeserta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormSearchPeserta.Designer.cs">
+      <DependentUpon>FormSearchPeserta.cs</DependentUpon>
     </Compile>
     <Compile Include="View\FormUpdatePeserta.cs">
       <SubType>Form</SubType>
@@ -174,6 +187,12 @@
     <EmbeddedResource Include="View\FormPesertaCreate.resx">
       <DependentUpon>FormPesertaCreate.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\FormSearchPelatihan.resx">
+      <DependentUpon>FormSearchPelatihan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormSearchPeserta.resx">
+      <DependentUpon>FormSearchPeserta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\FormUpdatePeserta.resx">
       <DependentUpon>FormUpdatePeserta.cs</DependentUpon>
     </EmbeddedResource>
@@ -205,6 +224,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\06knightlyIMAGE-696x822.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_FILL0_wght400_GRAD0_opsz24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_FILL0_wght400_GRAD0_opsz24.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

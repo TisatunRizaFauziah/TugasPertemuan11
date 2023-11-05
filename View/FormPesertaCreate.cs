@@ -14,6 +14,7 @@ namespace TugasPertemuan11.View
     public partial class FormPesertaCreate : Form
     {
         private Peserta ps;
+        Validasi val = new Validasi();
         public FormPesertaCreate()
         {
             ps = new Peserta();
@@ -28,8 +29,8 @@ namespace TugasPertemuan11.View
 
         private void btnExitPeserta_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Keluar");
-            Form1 cl = new Form1();
+           
+            FormPeserta cl = new FormPeserta();
             cl.Show();
             this.Hide();
         }
@@ -37,21 +38,33 @@ namespace TugasPertemuan11.View
         private void btnsavePeserta_Click_1(object sender, EventArgs e)
         {
             ps = new Peserta();
-            ps.tambahPeserta(txtidcrPeserta.Text, txtnamaCRpeserta.Text, txtemailCrPeserta.Text, txtNoCrPeserta.Text);
-           
-            this.Controls.Clear();
-            this.InitializeComponent();
-            txtidcrPeserta.Focus();
-            MessageBox.Show("data disimpan");
-           FormPesertaCreate psrt = new FormPesertaCreate();
 
-            psrt.Show();
-            this.Hide();
+            if (val.ValID(txtidcrPeserta.Text)&&val.valName(txtnamaCRpeserta.Text)&&val.ValEmail(txtemailCrPeserta.Text)&&val.ValNo(txtNoCrPeserta.Text,8,15))
+            {
+                try
+                {
+                    ps.tambahPeserta(txtidcrPeserta.Text, txtnamaCRpeserta.Text, txtemailCrPeserta.Text, txtNoCrPeserta.Text);
+                    MessageBox.Show("New Peserta Added ", "Add peserta ",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                   
+                    tampilPeserta();
+                    txtidcrPeserta.Focus();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "eror", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("Empty field ", "eror", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void txtidcrPeserta_KeyPress(object sender, KeyPressEventArgs e)
         {
-            e.Handled = char.IsDigit(e.KeyChar) && e.KeyChar != (char)Keys.Back;
+            
         }
 
         private void txtnamaCRpeserta_KeyPress(object sender, KeyPressEventArgs e)
@@ -64,11 +77,6 @@ namespace TugasPertemuan11.View
             e.Handled = char.IsDigit(e.KeyChar) && e.KeyChar != (char)Keys.Back;
         }
 
-        private void txtNoCrPeserta_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            e.Handled = char.IsDigit(e.KeyChar) && e.KeyChar != (char)Keys.Back;
-        }
-
         private void FormPesertaCreate_Load(object sender, EventArgs e)
         {
             txtidcrPeserta.MaxLength = 3;
@@ -76,5 +84,8 @@ namespace TugasPertemuan11.View
             txtemailCrPeserta.MaxLength = 35;
             txtNoCrPeserta.MaxLength = 13;
         }
+
+    
+
     }
 }

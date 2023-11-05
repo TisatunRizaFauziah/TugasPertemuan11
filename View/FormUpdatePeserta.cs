@@ -50,7 +50,7 @@ namespace TugasPertemuan11.View
 
         private void btnexit_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Keluar");
+            
             FormPeserta cl = new FormPeserta();
             cl.Show();
             this.Hide();

@@ -30,7 +30,13 @@ namespace TugasPertemuan11.View
 
         private void dataGridViewDeletePL_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            txtidDeletePS.Text = dataGridViewDeletePS.CurrentRow.Cells[0].Value.ToString();
+            txtnamaDeletePS.Text = dataGridViewDeletePS.CurrentRow.Cells[1].Value.ToString();
+            txtDeleteEmailPS.Text = dataGridViewDeletePS.CurrentRow.Cells[2].Value.ToString();
+            txtNotDeletePs.Text = dataGridViewDeletePS.CurrentRow.Cells[3].Value.ToString();
 
+            
+            
         }
 
         private void txtidDeletePS_TextChanged(object sender, EventArgs e)
@@ -40,14 +46,12 @@ namespace TugasPertemuan11.View
 
         private void FormDeletePeserta_Load(object sender, EventArgs e)
         {
-            txtidDeletePS.Text = this.dataGridViewDeletePS.CurrentRow.Cells[0].Value.ToString();
-            txtnamaDeletePS.Text = this.dataGridViewDeletePS.CurrentRow.Cells[1].Value.ToString();
-            txtDeleteEmailPS.Text = this.dataGridViewDeletePS.CurrentRow.Cells[2].Value.ToString();
-            txtNotDeletePs.Text = this.dataGridViewDeletePS.CurrentRow.Cells[3].Value.ToString();
+
         }
         bool verify()
         {
-            if (string.IsNullOrEmpty(txtidDeletePS.Text) || string.IsNullOrEmpty(txtnamaDeletePS.Text) || string.IsNullOrEmpty(txtDeleteEmailPS.Text) ||string.IsNullOrEmpty(txtNotDeletePs.Text))
+            
+            if (string.IsNullOrEmpty(txtidDeletePS.Text) || string.IsNullOrEmpty(txtnamaDeletePS.Text ) || string.IsNullOrEmpty(txtDeleteEmailPS.Text )|| string.IsNullOrEmpty(txtNotDeletePs.Text))
             {
                 return false;
             }
@@ -64,8 +68,9 @@ namespace TugasPertemuan11.View
                 {
 
                     ps.deleteTraining(txtidDeletePS.Text);
-                    Show();
+                    tampilPeserta();
                     btnClearPL.PerformClick();
+
                     MessageBox.Show("Training Deleted Succesfully", "Delete Training", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     txtidDeletePS.Focus();
                 }
@@ -84,7 +89,18 @@ namespace TugasPertemuan11.View
 
         private void btnClearPL_Click(object sender, EventArgs e)
         {
+            txtidDeletePS.Clear();
+            txtnamaDeletePS.Clear();
+            txtDeleteEmailPS.Clear();
+            txtNotDeletePs.Clear();
+    
+        }
 
+        private void btnexitDeletePS_Click(object sender, EventArgs e)
+        {
+            FormPeserta ps = new FormPeserta();
+            ps.Show();
+            this.Hide();
         }
     }
     

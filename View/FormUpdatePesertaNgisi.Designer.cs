@@ -44,6 +44,7 @@
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("MV Boli", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(588, 77);
@@ -54,6 +55,7 @@
             // 
             // btnExitPLUp
             // 
+            this.btnExitPLUp.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnExitPLUp.BackColor = System.Drawing.Color.Red;
             this.btnExitPLUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExitPLUp.Location = new System.Drawing.Point(953, 566);
@@ -66,6 +68,7 @@
             // 
             // btnsavePLUp
             // 
+            this.btnsavePLUp.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnsavePLUp.BackColor = System.Drawing.Color.Red;
             this.btnsavePLUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsavePLUp.Location = new System.Drawing.Point(785, 566);
@@ -79,6 +82,7 @@
             // 
             // txtnamaPesertaUP
             // 
+            this.txtnamaPesertaUP.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtnamaPesertaUP.Location = new System.Drawing.Point(785, 305);
             this.txtnamaPesertaUP.Multiline = true;
             this.txtnamaPesertaUP.Name = "txtnamaPesertaUP";
@@ -87,6 +91,7 @@
             // 
             // txtidPesertaUP
             // 
+            this.txtidPesertaUP.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtidPesertaUP.Location = new System.Drawing.Point(785, 249);
             this.txtidPesertaUP.Multiline = true;
             this.txtidPesertaUP.Name = "txtidPesertaUP";
@@ -95,6 +100,7 @@
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(594, 305);
@@ -105,6 +111,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(594, 256);
@@ -115,6 +122,7 @@
             // 
             // txtNoPesertaUP
             // 
+            this.txtNoPesertaUP.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtNoPesertaUP.Location = new System.Drawing.Point(785, 417);
             this.txtNoPesertaUP.Multiline = true;
             this.txtNoPesertaUP.Name = "txtNoPesertaUP";
@@ -123,6 +131,7 @@
             // 
             // txtemailPesertaUP
             // 
+            this.txtemailPesertaUP.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtemailPesertaUP.Location = new System.Drawing.Point(785, 361);
             this.txtemailPesertaUP.Multiline = true;
             this.txtemailPesertaUP.Name = "txtemailPesertaUP";
@@ -131,6 +140,7 @@
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(594, 424);
@@ -141,6 +151,7 @@
             // 
             // label5
             // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(594, 368);
@@ -151,6 +162,8 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.panel1.BackgroundImage = global::TugasPertemuan11.Properties.Resources._06knightlyIMAGE_696x822;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Location = new System.Drawing.Point(-5, -5);
@@ -177,7 +190,9 @@
             this.Controls.Add(this.btnExitPLUp);
             this.Controls.Add(this.btnsavePLUp);
             this.Name = "FormUpdatePesertaNgisi";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormUpdatePesertaNgisi";
+            this.Load += new System.EventHandler(this.FormUpdatePesertaNgisi_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -45,9 +45,12 @@
             // 
             // dataGridViewCreatePeserta
             // 
+            this.dataGridViewCreatePeserta.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridViewCreatePeserta.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridViewCreatePeserta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewCreatePeserta.Location = new System.Drawing.Point(55, 118);
+            this.dataGridViewCreatePeserta.Location = new System.Drawing.Point(45, 105);
             this.dataGridViewCreatePeserta.Name = "dataGridViewCreatePeserta";
             this.dataGridViewCreatePeserta.RowHeadersWidth = 62;
             this.dataGridViewCreatePeserta.RowTemplate.Height = 28;
@@ -56,6 +59,7 @@
             // 
             // btnExitPeserta
             // 
+            this.btnExitPeserta.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnExitPeserta.BackColor = System.Drawing.Color.Red;
             this.btnExitPeserta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExitPeserta.Location = new System.Drawing.Point(981, 602);
@@ -68,6 +72,7 @@
             // 
             // btnsavePeserta
             // 
+            this.btnsavePeserta.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnsavePeserta.BackColor = System.Drawing.Color.Red;
             this.btnsavePeserta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsavePeserta.Location = new System.Drawing.Point(813, 602);
@@ -81,15 +86,16 @@
             // 
             // txtNoCrPeserta
             // 
+            this.txtNoCrPeserta.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNoCrPeserta.Location = new System.Drawing.Point(815, 519);
             this.txtNoCrPeserta.Multiline = true;
             this.txtNoCrPeserta.Name = "txtNoCrPeserta";
             this.txtNoCrPeserta.Size = new System.Drawing.Size(260, 30);
             this.txtNoCrPeserta.TabIndex = 35;
-            this.txtNoCrPeserta.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNoCrPeserta_KeyPress);
             // 
             // txtemailCrPeserta
             // 
+            this.txtemailCrPeserta.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txtemailCrPeserta.Location = new System.Drawing.Point(815, 463);
             this.txtemailCrPeserta.Multiline = true;
             this.txtemailCrPeserta.Name = "txtemailCrPeserta";
@@ -99,6 +105,7 @@
             // 
             // txtnamaCRpeserta
             // 
+            this.txtnamaCRpeserta.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txtnamaCRpeserta.Location = new System.Drawing.Point(278, 519);
             this.txtnamaCRpeserta.Multiline = true;
             this.txtnamaCRpeserta.Name = "txtnamaCRpeserta";
@@ -108,6 +115,7 @@
             // 
             // txtidcrPeserta
             // 
+            this.txtidcrPeserta.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txtidcrPeserta.Location = new System.Drawing.Point(278, 463);
             this.txtidcrPeserta.Multiline = true;
             this.txtidcrPeserta.Name = "txtidcrPeserta";
@@ -117,6 +125,7 @@
             // 
             // label4
             // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(595, 520);
@@ -127,6 +136,7 @@
             // 
             // label5
             // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(595, 464);
@@ -137,6 +147,7 @@
             // 
             // label3
             // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(58, 513);
@@ -147,6 +158,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(58, 464);
@@ -184,6 +196,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Name = "FormPesertaCreate";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormPesertaCreate";
             this.Load += new System.EventHandler(this.FormPesertaCreate_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCreatePeserta)).EndInit();
