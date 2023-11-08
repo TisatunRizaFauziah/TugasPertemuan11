@@ -11,11 +11,9 @@ namespace TugasPertemuan11.Model
 {
     internal class Connection
     {
-
         public MySqlCommand cmd;
         public DataSet ds;
         public MySqlDataAdapter da;
-
 
         public MySqlConnection GetConn()
         {

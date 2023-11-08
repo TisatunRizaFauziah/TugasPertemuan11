@@ -52,6 +52,7 @@
             this.txtSearchPL.Name = "txtSearchPL";
             this.txtSearchPL.Size = new System.Drawing.Size(413, 51);
             this.txtSearchPL.TabIndex = 69;
+            this.txtSearchPL.TextChanged += new System.EventHandler(this.txtSearchPL_TextChanged);
             // 
             // btnPrintPelatihan
             // 
@@ -174,6 +175,7 @@
             this.Name = "FormSearchPelatihan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormSearchPelatihan";
+            this.Load += new System.EventHandler(this.FormSearchPelatihan_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSearchPelatihan)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

@@ -23,7 +23,7 @@ namespace TugasPertemuan11.View
         }
         public void tampilPelatihan()
         {
-            dataGridViewSearchPelatihan.DataSource = pl.tampilPelatihan();
+          dataGridViewSearchPelatihan.DataSource = pl.tampilPelatihan();
           dataGridViewSearchPelatihan.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
@@ -54,6 +54,16 @@ namespace TugasPertemuan11.View
         {
             printPreviewDialog1PL.Document = printDocumentPL;
             printPreviewDialog1PL.ShowDialog();
+        }
+
+        private void txtSearchPL_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormSearchPelatihan_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
